@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Untitled</title>
+  
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lab 5 - Formulario Basico HTML</title>
+  <style>
+    body{
+      font-family: Arial, Italic, sans-serif;
+      color:#cb8cb8;
+      padding: 40px;
+      background-color: #161618;
+    }
+    .container-form{
+      width: 60%;
+      margin: 50px;
+      background-color: #161621;
+      padding: 30px;
+      border-radius:30px;
+    }
+    .Titulo-form{
+      background-color: #161618;
+      text-aling: center;
+      padding: 10px;
+    }
+  </style>
+</head>
+<body>
+  <header> 
+  </header>
+  <nav>
+    
+  </nav>
+  
+  <section class="container-form">
+    <h1 class="Titulo-form">Formulario</h1>
+     <fieldset>
+        <legend>credenciales de acceso</legend>
+        <label for="usuario">Usuario</label>
+        <input type="text" name="usuario" id=usuario required pattern="[A-Z]{3}" placeholder="AAAbbb">
+        <br>
+        <label for="contraseña">Contraseña</label>
+        <input type="password" name="contraseña" id="contraseña" minlength="5" maxlength="50" required>
+      </fieldset>
+
+    <fieldset>
+    <legend>Formulario Registro de usuario</legend>
+    <form action="#" method="post">
+      <label for ="nombre">* Nombre:</label>
+      <input type="text" name="nombre" id="nombre" required>
+      <br>
+       <label for ="email">Email:</label>
+      <input type="email" name="email" id="email">
+      <br>
+       <label for ="telfono">Telefono:</label>
+      <input type="tel" name="telefono" id="telfono">
+      <br>
+       <label for ="FechaNa">Fecha de Nacimiento</label>
+      <input type="date" name="FechaNa" id="FechaNa">
+      <br>
+       <label for ="edad">* Edad</label>
+      <input type="number" name="Edad" id="Edad" required>
+      <br>
+       <label for="">Nivel Escolar:</label>
+      <select name="escolaridad" id=escolaridad>
+        <option value="" selected disabled></option>
+        <option value="1">Primaria</option>
+        <option value="2">Secundaria</option>
+        <option value="3">Pregrado</option>
+        <option value="4">Especializacion</option>
+        <option value="5">Maestria</option>
+        <option value="6">Doctorado</option>
+        <option value="" disabled> </option>
+      </select>
+      <br>
+      <label for="comentario">Comentarios:</label>
+      <textarea name="comentario" id="comentario" rows="5" cols="40">
+      </textarea>
+      </fieldset>
+      <br>
+      <input type="submit" value="Enviar">
+      <input type="reset" value="Limpiar">
+      
+      
+  </section>
+    <section>
+  </section>
+    <section>
+  </section>
+  
+  <footer>
+    
+  </footer>
+</body>
+</html>
+<!-- partial -->
+  
+</body>
+</html>
